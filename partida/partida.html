@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de partida</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h2>Cadastro de partidas</h2>
+    <form class="form-cadastro" id="formPartida">
+      <p>
+        Time mandante:
+        <input type="text" placeholder="Corinthians" id="timeMandante" />
+      </p>
+      <p>
+        Time visitante:
+        <input type="text" placeholder="São Paulo" id="timeVisitante" />
+      </p>
+      <p>
+        Campeonato:
+        <select id="campeonatos">
+            <option disabled selected>Selecione</option>
+        </select>
+      </p> 
+      <input type="button" onclick="salvarPartida(event)" value="cadastrar" />
+
+    </form>
+
+    <hr/>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Time mandante</th>
+                <th>Time visitante</th>
+                <th>Campeonato</th>
+            </tr>
+        </thead>
+        <tbody id="tbPartidas">
+        </tbody>
+    </table>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="text/javascript" src="partida.js">
+
+</script>
+</html>
